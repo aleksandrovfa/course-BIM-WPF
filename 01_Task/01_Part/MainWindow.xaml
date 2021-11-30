@@ -5,44 +5,111 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_01_Part"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="300">
-    <Grid>
+        Title="Калькулятор" Height="347" Width="273.988">
+    <Grid Background="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}">
         <Button Content="1" 
                 HorizontalAlignment="Left" 
-                Margin="36,120,0,0" 
+                Margin="10,85,0,0" 
                 VerticalAlignment="Top" 
                 Width="50" 
-                Height="50" FontSize="20"/>
-        <Button Content="Button" 
+                Height="50" FontSize="20" FontFamily="Segoe Print"/>
+        <Button Content="2" 
             HorizontalAlignment="Left" 
-            Margin="91,120,0,0" 
+            Margin="65,85,0,0" 
             VerticalAlignment="Top" 
             Width="50" 
-            Height="50"/>
-        <Button Content="Button" 
+            Height="50" FontSize="20" FontFamily="Segoe Print"/>
+        <Button Content="3" 
             HorizontalAlignment="Left" 
-            Margin="146,120,0,0" 
+            Margin="120,85,0,0" 
             VerticalAlignment="Top" 
             Width="50" 
-            Height="50"/>
-        <Button Content="Button" 
+            Height="50" FontSize="20" FontFamily="Segoe Print"/>
+        <Button Content="4" 
             HorizontalAlignment="Left" 
-            Margin="36,175,0,0" 
+            Margin="10,140,0,0" 
             VerticalAlignment="Top" 
             Width="50" 
-            Height="50"/>
-        <Button Content="Button" 
+            Height="50" FontSize="20" FontFamily="Segoe Print"/>
+        <Button Content="5" 
             HorizontalAlignment="Left" 
-            Margin="91,175,0,0" 
+            Margin="65,140,0,0" 
             VerticalAlignment="Top" 
             Width="50" 
-            Height="50"/>
-        <Button Content="Button" 
+            Height="50" FontSize="20" FontFamily="Segoe Print"/>
+        <Button Content="6" 
             HorizontalAlignment="Left" 
-            Margin="146,175,0,0" 
+            Margin="120,140,0,0" 
             VerticalAlignment="Top" 
             Width="50" 
-            Height="50"/>
+            Height="50" FontSize="20" FontFamily="Segoe Print"/>
+        <Button Content="7" 
+            HorizontalAlignment="Left" 
+            Margin="10,195,0,0" 
+            VerticalAlignment="Top" 
+            Width="50" 
+            Height="50" FontSize="20" FontFamily="Segoe Print"/>
+        <Button Content="8" 
+            HorizontalAlignment="Left" 
+            Margin="65,195,0,0" 
+            VerticalAlignment="Top" 
+            Width="50" 
+            Height="50" FontSize="20" FontFamily="Segoe Print"/>
+        <Button Content="9" 
+            HorizontalAlignment="Left" 
+            Margin="120,195,0,0" 
+            VerticalAlignment="Top" 
+            Width="50" 
+            Height="50" FontSize="20" FontFamily="Segoe Print"/>
+        <Button Content="0" 
+            HorizontalAlignment="Left" 
+            Margin="10,250,0,0" 
+            VerticalAlignment="Top" 
+            Width="50" 
+            Height="50" FontSize="20" FontFamily="Segoe Print"/>
+        <Button Content="," 
+            HorizontalAlignment="Left" 
+            Margin="65,250,0,0" 
+            VerticalAlignment="Top" 
+            Width="50" 
+            Height="50" FontSize="20" FontFamily="Segoe Print"/>
+        <Button Content="=" 
+            HorizontalAlignment="Left" 
+            Margin="120,250,0,0" 
+            VerticalAlignment="Top" 
+            Width="50" 
+            Height="50" FontSize="20" FontFamily="Segoe Print"/>
+        <Button Content="3" 
+            HorizontalAlignment="Left" 
+            Margin="120,85,0,0" 
+            VerticalAlignment="Top" 
+            Width="50" 
+            Height="50" FontSize="20" FontFamily="Segoe Print"/>
+        <Button Content="/" 
+            HorizontalAlignment="Left" 
+            Margin="206,250,0,0" 
+            VerticalAlignment="Top" 
+            Width="50" 
+            Height="50" FontSize="20" FontFamily="Segoe Print"/>
+        <Button Content="*" 
+            HorizontalAlignment="Left" 
+            Margin="206,195,0,0" 
+            VerticalAlignment="Top" 
+            Width="50" 
+            Height="50" FontSize="20" FontFamily="Segoe Print"/>
+        <Button Content="-" 
+            HorizontalAlignment="Left" 
+            Margin="206,140,0,0" 
+            VerticalAlignment="Top" 
+            Width="50" 
+            Height="50" FontSize="20" FontFamily="Segoe Print"/>
+        <Button Content="+" 
+            HorizontalAlignment="Left" 
+            Margin="206,85,0,0" 
+            VerticalAlignment="Top" 
+            Width="50" 
+            Height="50" FontSize="20" FontFamily="Segoe Print"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" Height="47" Background="White"/>
 
     </Grid>
 </Window>
