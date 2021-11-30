@@ -19,7 +19,7 @@
             <Button Content="1/x" Margin="1" Padding="5"/>
             <Button Content="x²" Margin="1" Padding="5"/>
             <Button Content="√x" Margin="1" Padding="5"/>
-            <Button Content="√x" Margin="1" Padding="5"/>
+            <Button Content="÷" Margin="1" Padding="5"/>
             <Button Content="7" Margin="1" Padding="5" Background="White"/>
             <Button Content="8" Margin="1" Padding="5" Background="White"/>
             <Button Content="9" Margin="1" Padding="5" Background="White"/>
