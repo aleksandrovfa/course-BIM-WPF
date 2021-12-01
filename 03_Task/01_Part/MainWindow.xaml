@@ -29,7 +29,7 @@
             </ToolBar>
             <ToolBar Button.Click="Button_Click" Margin="5" Padding="5">
                 <Button x:Name="bold">
-                    <Image Source="Data/text_bold.png" Width="30"/>
+                    <Image Source="Data/text_bold.png" Width="30" IsEnabled="False"/>
                 </Button>
                 <Separator/>
                 <Button x:Name="italic">

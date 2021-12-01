@@ -50,10 +50,12 @@ namespace _01_Part
                 if (textbox.FontWeight == FontWeights.Normal)
                 {
                     textbox.FontWeight = FontWeights.Bold;
+                    bold.Opacity = 0.2;
                 }
                 else
                 {
                     textbox.FontWeight = FontWeights.Normal;
+                    bold.Opacity = 1;
                 }
             }
             else if (e.OriginalSource == italic)
