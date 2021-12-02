@@ -63,10 +63,12 @@ namespace _01_Part
                 if (textbox.FontStyle == FontStyles.Normal)
                 {
                     textbox.FontStyle = FontStyles.Italic;
+                    italic.Opacity = 0.2;
                 }
                 else
                 {
                     textbox.FontStyle = FontStyles.Normal;
+                    italic.Opacity = 1;
                 }
             }
             else if (e.OriginalSource == underline)
@@ -74,11 +76,29 @@ namespace _01_Part
                 if (textbox.TextDecorations == null)
                 {
                     textbox.TextDecorations = TextDecorations.Underline;
+                    underline.Opacity = 0.2;
                 }
                 else
                 {
                     textbox.TextDecorations = null;
+                    underline.Opacity = 1;
                 }
+            }
+        }
+        private void RadioButton_Click(object sender, RoutedEventArgs e)
+        {
+
+            if ((e.OriginalSource as RadioButton).Content.ToString() == "Черный")
+            {
+                textbox.Foreground = Brushes.Black;
+            }
+            else if ((e.OriginalSource as RadioButton).Content.ToString() == "Красный")
+            {
+                textbox.Foreground = Brushes.Red;
+            }
+            else if ((e.OriginalSource as RadioButton).Content.ToString() == "Зеленый")
+            {
+                textbox.Foreground = Brushes.Green;
             }
         }
     }

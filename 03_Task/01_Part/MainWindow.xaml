@@ -13,13 +13,21 @@
         </Grid.RowDefinitions>
         <ToolBarTray Grid.Row="0">
             <ToolBar Margin="5" Padding="5">
-                <ComboBox Margin="5" Padding="5" SelectedIndex="0" Width="200" SelectionChanged="ComboBox_SelectionChanged">
+                <ComboBox Margin="5" 
+                          Padding="5" 
+                          SelectedIndex="0" 
+                          Width="200" 
+                          SelectionChanged="ComboBox_SelectionChanged">
                     <TextBlock Text="Arial"/>
                     <TextBlock Text="Times New Roman"/>
                     <TextBlock Text="Verdana"/>
                     <TextBlock Text="Broadway"/>
                 </ComboBox>
-                <ComboBox Margin="5" Padding="5" SelectedIndex="0" Width="200" SelectionChanged="ComboBox_SelectionChanged_1">
+                <ComboBox Margin="5" 
+                          Padding="5" 
+                          SelectedIndex="0" 
+                          Width="200" 
+                          SelectionChanged="ComboBox_SelectionChanged_1">
                     <TextBlock Text="12"/>
                     <TextBlock Text="14"/>
                     <TextBlock Text="16"/>
@@ -27,27 +35,41 @@
                     <TextBlock Text="25"/>
                 </ComboBox>
             </ToolBar>
-            <ToolBar Button.Click="Button_Click" Margin="5" Padding="5">
+            <ToolBar Button.Click="Button_Click" 
+                     Margin="5" 
+                     Padding="5">
                 <Button x:Name="bold">
-                    <Image Source="Data/text_bold.png" Width="30" IsEnabled="False"/>
+                    <Image Source="Data/text_bold.png" 
+                           Width="30" />
                 </Button>
                 <Separator/>
                 <Button x:Name="italic">
-                    <Image Source="Data/text_italic.png" Width="30"/>
+                    <Image Source="Data/text_italic.png" 
+                           Width="30"/>
                 </Button>
                 <Separator/>
                 <Button x:Name="underline">
-                    <Image Source="Data/text_underline.png" Width="30"/>
+                    <Image Source="Data/text_underline.png" 
+                           Width="30"/>
                 </Button>
                 <Separator/>
             </ToolBar>
             <ToolBar Margin="5" Padding="5">
-                <StackPanel VerticalAlignment="Center">
+                <StackPanel RadioButton.Click ="RadioButton_Click"  VerticalAlignment="Center">
                     <RadioButton Content="Черный" IsChecked="True"/>
                     <RadioButton Content="Красный"/>
+                    <RadioButton Content="Зеленый"/>
                 </StackPanel>
             </ToolBar>
         </ToolBarTray>
-        <TextBox x:Name="textbox" Grid.Row="1" Margin="5" Padding="5" FontSize="16" FontFamily="Ariel" TextWrapping="Wrap" TextDecorations="{x:Null}"/>
+        <TextBox x:Name="textbox" 
+                 Grid.Row="1" 
+                 Margin="10,10,0,0" 
+                 Padding="5" 
+                 FontSize="16" 
+                 FontFamily="Ariel" 
+                 TextWrapping="Wrap" 
+                 TextDecorations="{x:Null}"
+                 />
     </Grid>
 </Window>
