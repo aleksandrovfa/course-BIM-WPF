@@ -42,6 +42,18 @@ namespace _01_Part
                 case "btn3":
                     resSum3.Text = Result(rate3, sum3);
                     break;
+                case "distBtn0":
+                    distResult0.Text = Result(distIn0, 0.0254);
+                    break;
+                case "distBtn1":
+                    distResult1.Text = Result(distIn1, 0.3048);
+                    break;
+                case "distBtn2":
+                    distResult2.Text = Result(distIn2, 1609.34);
+                    break;
+                case "distBtn3":
+                    distResult3.Text = Result(distIn3, 1066.8);
+                    break;
             }
         }
         private string Result (TextBox t1,TextBox t2)
@@ -58,5 +70,21 @@ namespace _01_Part
                 return e.Message;
             }
         }
+
+        private string Result(TextBox t1, double t2)
+        {
+            try
+            {
+                double rate = Convert.ToDouble(t1.Text);
+                double sum = t2;
+                string res = (rate * sum).ToString();
+                return res;
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+        }
+
     }
 }
