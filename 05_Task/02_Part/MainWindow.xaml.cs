@@ -65,7 +65,6 @@ namespace _02_Part
             if (saveFileDialog.ShowDialog() == true)
             {
                 //File.WriteAllText(saveFileDialog.FileName, i);
-                //File.
             }
 
         }
