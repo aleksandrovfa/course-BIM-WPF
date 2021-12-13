@@ -1,0 +1,42 @@
+﻿<Window x:Class="_01_Part.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_01_Part"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="210">
+    <Grid>
+        <Path Fill="Red">
+            <Path.Data>
+                <CombinedGeometry GeometryCombineMode="Union">
+                    <CombinedGeometry.Geometry1>
+                        <GeometryGroup FillRule="EvenOdd"  >
+                            <EllipseGeometry RadiusX="40" RadiusY="40" Center="100,100"/>
+                            <EllipseGeometry RadiusX="50" RadiusY="50" Center="100,100"/>
+                        </GeometryGroup>
+                    </CombinedGeometry.Geometry1>
+                    <CombinedGeometry.Geometry2>
+                        <RectangleGeometry Rect="55,95,90,10">
+                            <RectangleGeometry.Transform>
+                                <RotateTransform Angle="-45" CenterX="100" CenterY="100"/>
+                            </RectangleGeometry.Transform>
+                        </RectangleGeometry>
+                    </CombinedGeometry.Geometry2>
+                </CombinedGeometry>
+            </Path.Data>
+        </Path>
+        <Rectangle Width="90" Height="10" Fill="Red" Margin="66,128,636,281">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-45"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        
+
+    </Grid>
+</Window>
