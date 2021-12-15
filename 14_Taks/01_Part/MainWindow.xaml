@@ -5,13 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_01_Part"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="550">
     <Window.Resources>
-        <local:PriorityConverter x:Key="converter"/>
         <DataTemplate x:Key="myTemplate">
-            <Border x:Name="border" BorderBrush="Aquamarine" BorderThickness="1" Padding="5" Margin="5">
-                <!--<Grid>-->
-                    <!--<Grid.ColumnDefinitions>
+            <Border x:Name="border" BorderBrush="Aquamarine" BorderThickness="1" Padding="5" Margin="5" >
+                <Grid>
+                <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
@@ -21,28 +20,28 @@
                         <RowDefinition/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    --><!--<Image Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Width="50" Height="50" Source="{Binding Path=Image}"/>--><!--
-                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Название"/>
-                    <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding Path=ProductName}"/>
+                    <Image Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Width="50" Height="50" Source="{Binding Path=Image}"/>
+                    <TextBlock Grid.Row="0" Grid.Column="1" Text="Название"/>
+                    <TextBlock Grid.Row="0" Grid.Column="2" Text="{Binding Path=ProductName}"/>
                     <TextBlock Grid.Row="1" Grid.Column="1" Text="Цена"/>
                     <TextBlock Grid.Row="1" Grid.Column="2" Text="{Binding Path=Cost}"/>
                     <TextBlock Grid.Row="2" Grid.Column="1" Text="Тип"/>
-                    <TextBlock Grid.Row="2" Grid.Column="2" Text="{Binding Path=ProductType}"/>-->
-                <!--</Grid>-->
+                    <TextBlock Grid.Row="2" Grid.Column="2" Text="{Binding Path=ProductType}"/>
+                </Grid>
             </Border>
-            <!--<DataTemplate.Triggers>
+            <DataTemplate.Triggers>
                 <DataTrigger Binding="{Binding Path=ProductType}">
                     <DataTrigger.Value>
                         <local:ProductTypes>Food</local:ProductTypes>
                     </DataTrigger.Value>
                     <Setter TargetName="border" Property="BorderBrush" Value="Red"/>
                 </DataTrigger>
-            </DataTemplate.Triggers>-->
+            </DataTemplate.Triggers>
         </DataTemplate>
     </Window.Resources>
     <StackPanel>
         <TextBlock x:Name="productTitle" FontSize="20" Text="Список продуктов:" HorizontalAlignment="Center"/>
-        <ListBox Name="lstBox" Width="400" Margin="10" ItemsSource="{StaticResource myTemplate}"/>
+        <ListBox Name="lstBox" Width="400" Margin="10" ItemTemplate="{StaticResource myTemplate}" HorizontalContentAlignment="Stretch"/>
 
     </StackPanel>
 </Window>

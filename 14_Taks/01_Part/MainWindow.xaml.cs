@@ -51,9 +51,10 @@ namespace _01_Part
             {
                 ProductName = "Кофемашина",
                 Cost = 6700,
-                ProductType = ProductTypes.Food,
+                ProductType = ProductTypes.Technics,
                 Image = "Data/техника.png"
             });
+            lstBox.ItemsSource = products;
         }
     }
 }
