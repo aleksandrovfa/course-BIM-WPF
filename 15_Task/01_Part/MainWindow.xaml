@@ -1,0 +1,61 @@
+﻿<Window x:Class="_01_Part.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_01_Part"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="450"
+        Width="600">
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <Paragraph>
+                    <Hyperlink NavigateUri="https://www.russianfood.com/recipes/recipe.php?rid=159506"
+                               FontSize="18"
+                               Foreground="#FFD84C00" FontWeight="Bold">Жаркое по-деревенски</Hyperlink>
+                </Paragraph>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn Width="200" />
+                        <TableColumn />
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Floater Width="170"
+                                             HorizontalAlignment="Left">
+                                        <BlockUIContainer>
+                                            <Image Source="Data/1.jpg" />
+                                        </BlockUIContainer>
+                                    </Floater>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Простое, но очень ароматное и вкусное блюдо для семейного обеда или ужина.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+
+                    <List Background="#FFD9E0A6"
+                           Foreground="#FFD84C00">
+                        <ListItem>
+                        <Paragraph>
+                            <Bold>Продукты</Bold>
+                        </Paragraph>
+                    </ListItem>
+
+                </List>
+
+
+
+
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Window>
