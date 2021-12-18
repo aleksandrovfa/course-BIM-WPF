@@ -6,15 +6,20 @@
         xmlns:local="clr-namespace:_01_Part"
         mc:Ignorable="d"
         Title="MainWindow"
-        Height="450"
-        Width="600">
+        Height="697.99"
+        Width="650">
     <Grid>
-        <FlowDocumentScrollViewer>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <FlowDocumentScrollViewer Name="docViewer">
             <FlowDocument>
                 <Paragraph>
                     <Hyperlink NavigateUri="https://www.russianfood.com/recipes/recipe.php?rid=159506"
                                FontSize="18"
-                               Foreground="#FFD84C00" FontWeight="Bold">Жаркое по-деревенски</Hyperlink>
+                               Foreground="#FFD84C00"
+                               FontWeight="Bold">Жаркое по-деревенски</Hyperlink>
                 </Paragraph>
                 <Table>
                     <Table.Columns>
@@ -41,21 +46,397 @@
                         </TableRow>
                     </TableRowGroup>
                 </Table>
+                <Table Background="#FFD9E0A6">
+                    <Table.Columns>
+                        <TableColumn Width="50" />
+                        <TableColumn  Width="280" />
+                        <TableColumn />
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell  TextAlignment="Left">
+                                <Paragraph Foreground="#FFD84C00"
+                                           Margin="0,15">
+                                    <Bold>Продукты</Bold>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell Background="#FFE5EAC2">
+                                <Paragraph>
+                                    Свиная корейка без кости - 1 кг
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell />
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell>
+                                <Paragraph>
+                                    Сало свиное свежее - 50 г
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell />
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell Background="#FFE5EAC2">
+                                <Paragraph>
+                                    Масло сливочное - 50 г
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell />
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell>
+                                <Paragraph>
+                                    Картофель - 1 кг
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell />
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell Background="#FFE5EAC2">
+                                <Paragraph>
+                                    Перец болгарский - 1 шт.
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell />
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell>
+                                <Paragraph>
+                                    Морковь - 2 шт.
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell />
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell Background="#FFE5EAC2">
+                                <Paragraph>
+                                    Лук репчатый - 2 шт.
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell />
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell>
+                                <Paragraph>
+                                    Чеснок - 2 зубчика
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell />
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell Background="#FFE5EAC2">
+                                <Paragraph>
+                                    Зелень петрушки свежая - по вкусу
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell />
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell>
+                                <Paragraph>
+                                    Зелень петрушки сушёная - по вкусу
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell />
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell Background="#FFE5EAC2">
+                                <Paragraph>
+                                    Специи для мяса - по вкусу
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell />
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell>
+                                <Paragraph>
+                                    Перец чёрный горошком - по вкусу
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell />
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell Background="#FFE5EAC2">
+                                <Paragraph>
+                                    Перец чёрный молотый - по вкусу
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell />
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell LineHeight="35">
+                                <Paragraph>
+                                    Соль - по вкусу
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell />
+                        </TableRow>
 
-                    <List Background="#FFD9E0A6"
-                           Foreground="#FFD84C00">
-                        <ListItem>
-                        <Paragraph>
-                            <Bold>Продукты</Bold>
-                        </Paragraph>
-                    </ListItem>
 
-                </List>
+                    </TableRowGroup>
+                </Table>
+                <Paragraph>
+                    <Bold Foreground="#FFDE8D08">Пошаговый фото рецепт</Bold>
+                    <Run Foreground="#FFBAC6C3">Жаркое по-деревенски</Run>
+                </Paragraph>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn Width="80" />
+                        <TableColumn />
+                        <TableColumn />
+                        <TableColumn Width="80" />
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell ColumnSpan="2"
+                                       LineHeight="2"
+                                       Foreground="#FFE39915">
+                                <Paragraph>
+                                    ____________________________________
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell>
+                                <Paragraph>
+                                    <Floater Width="170"
+                                             HorizontalAlignment="Left">
+                                        <BlockUIContainer>
+                                            <Image Source="Data/2.jpg" />
+                                        </BlockUIContainer>
+                                    </Floater>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph TextAlignment="Left">
+                                    В сотейнике растопить сало, нарезанное мелкими кубиками.
+Добавить мясо, нарезанное небольшими кусочками. Обжарить до румяной корочки.
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell />
 
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell ColumnSpan="2"
+                                       LineHeight="2"
+                                       Foreground="#FFE39915">
+                                <Paragraph>
+                                    ____________________________________
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell>
+                                <Paragraph>
+                                    <Floater Width="170"
+                                             HorizontalAlignment="Left">
+                                        <BlockUIContainer>
+                                            <Image Source="Data/3.jpg" />
+                                        </BlockUIContainer>
+                                    </Floater>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph TextAlignment="Left">
+                                    Затем добавить морковь, нарезанную кружочками. Обжаривать 5 минут.
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell />
 
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell ColumnSpan="2"
+                                       LineHeight="2"
+                                       Foreground="#FFE39915">
+                                <Paragraph>
+                                    ____________________________________
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell>
+                                <Paragraph>
+                                    <Floater Width="170"
+                                             HorizontalAlignment="Left">
+                                        <BlockUIContainer>
+                                            <Image Source="Data/4.jpg" />
+                                        </BlockUIContainer>
+                                    </Floater>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph TextAlignment="Left">
+                                    Лук, нарезанный полукольцами. Обжаривать 5 минут.
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell />
 
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell ColumnSpan="2"
+                                       LineHeight="2"
+                                       Foreground="#FFE39915">
+                                <Paragraph>
+                                    ____________________________________
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell>
+                                <Paragraph>
+                                    <Floater Width="170"
+                                             HorizontalAlignment="Left">
+                                        <BlockUIContainer>
+                                            <Image Source="Data/5.jpg" />
+                                        </BlockUIContainer>
+                                    </Floater>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph TextAlignment="Left">
+                                    Болгарский перец, нарезанный дольками. Ещё 5 минут.
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell />
 
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell ColumnSpan="2"
+                                       LineHeight="2"
+                                       Foreground="#FFE39915">
+                                <Paragraph>
+                                    ____________________________________
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell>
+                                <Paragraph>
+                                    <Floater Width="170"
+                                             HorizontalAlignment="Left">
+                                        <BlockUIContainer>
+                                            <Image Source="Data/6.jpg" />
+                                        </BlockUIContainer>
+                                    </Floater>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph TextAlignment="Left">
+                                    Добавить крупно нарезанный картофель, кусочек сливочного масла, 200 мл воды, специи, сушёную петрушку и соль. Не перемешивать.
+Накрыть крышкой, убавить огонь и тушить на медленном огне 40 минут.
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell />
+
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell ColumnSpan="2"
+                                       LineHeight="2"
+                                       Foreground="#FFE39915">
+                                <Paragraph>
+                                    ____________________________________
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell>
+                                <Paragraph>
+                                    <Floater Width="170"
+                                             HorizontalAlignment="Left">
+                                        <BlockUIContainer>
+                                            <Image Source="Data/7.jpg" />
+                                        </BlockUIContainer>
+                                    </Floater>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph TextAlignment="Left">
+                                    В конце приготовления добавить нарезанную свежую зелень, измельчённый чеснок. Перемешать и снять с огня.
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell />
+
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell ColumnSpan="2"
+                                       LineHeight="2"
+                                       Foreground="#FFE39915">
+                                <Paragraph>
+                                    ____________________________________
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell>
+                                <Paragraph>
+                                    <Floater Width="170"
+                                             HorizontalAlignment="Left">
+                                        <BlockUIContainer>
+                                            <Image Source="Data/8.jpg" />
+                                        </BlockUIContainer>
+                                    </Floater>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph TextAlignment="Left">
+                                    Приятного аппетита!
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell />
+                        </TableRow>
+                        <TableRow>
+                            <TableCell />
+                            <TableCell ColumnSpan="2"
+                                       LineHeight="2"
+                                       Foreground="#FFE39915">
+                                <Paragraph>
+                                    ____________________________________
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                    </TableRowGroup>
+                </Table>
             </FlowDocument>
         </FlowDocumentScrollViewer>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Content="Открыть"
+                    Width="100"  Click="Button_Click_2"/>
+            <Button Content="Сохранить"
+                    Width="100" Click="Button_Click_1"/>
+            <Button Content="Очистить"
+                    Width="100" Click="Button_Click"/>
+        </StackPanel>
     </Grid>
 </Window>
