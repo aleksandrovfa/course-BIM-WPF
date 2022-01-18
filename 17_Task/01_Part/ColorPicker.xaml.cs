@@ -87,7 +87,7 @@ namespace _01_Part
             colorpicker.Blue = newColor.B;
         }
 
-        public event RoutedPropertyChangedEventHandler<Color> ColorChanged
+        public event RoutedPropertyChangedEventHandler <Color> ColorChanged
         {
             add { AddHandler(ColorChangedEvent, value); }
             remove { RemoveHandler(ColorChangedEvent, value); }
@@ -95,10 +95,9 @@ namespace _01_Part
 
         }
 
-
-        //public ColorPicker()
-        //{
-        //   InitializeComponent(); 
-        //}
+        public ColorPicker()
+        {
+            InitializeComponent();
+        }
     }
 }

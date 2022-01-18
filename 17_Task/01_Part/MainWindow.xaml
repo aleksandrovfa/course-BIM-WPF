@@ -6,11 +6,8 @@
         xmlns:local="clr-namespace:_01_Part"
         
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="105" Width="800">
     <Grid>
-
-            <local:ColorPicker x:Name="colorPicker" Margin="5" 
-          ColorChanged="colorPicker_ColorChanged"/>
-
+            <local:ColorPicker x:Name="colorPicker" Margin="5" />
     </Grid>
 </Window>

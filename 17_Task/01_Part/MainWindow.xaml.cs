@@ -26,10 +26,7 @@ namespace _01_Part
             InitializeComponent();
 
         }
-        private void colorPicker_ColorChanged(object sender, RoutedPropertyChangedEventArgs e)
-        {
-            txb.Text = e.NewValue.ToString();
-        }
+
 
     }
 }
